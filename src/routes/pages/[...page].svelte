@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
+	import { base } from '$app/paths';
 	export let articles: Article[] = [];
     export let hasMore = false;
     export let page = 0
@@ -16,7 +17,7 @@
 			<article>
 				<header>
 					<h1>
-						<a sveltekit:prefetch href={`/articles/${article._id}`}>
+						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>
 							{article.title}
 						</a>
 					</h1>
@@ -33,11 +34,11 @@
 				{#if article?.meta?.description}
 					<div class="description">
 						{article?.meta?.description || ''}
-						<a sveltekit:prefetch href={`/articles/${article._id}`}>...続きを読む</a>
+						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>...続きを読む</a>
 					</div>
 				{:else}
 					<div class="description">
-						<a sveltekit:prefetch href={`/articles/${article._id}`}>...続きを読む</a>
+						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>...続きを読む</a>
 					</div>
 				{/if}
 			</article>

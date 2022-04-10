@@ -1,5 +1,5 @@
 <script lang="ts">
-	import QiitaIcon from '$lib/icons/qiitaIcon.svelte';
+	import QiitaIcon from '$lib/icons/QiitaLogoIcon.svelte';
 	import ZennIcon from '$lib/icons/ZennIcon.svelte';
 	import GithunIcon from '$lib/icons/GithubIcon.svelte';
 	import { base } from '$app/paths';

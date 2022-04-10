@@ -18,7 +18,7 @@ const config = {
 		paths: {
 			base: dev ? '' : '/svelte-simple-blog',
 		},
-		trailingSlash : 'always',
+		trailingSlash : 'never',
 		prerender : {
 			default : true
 		}

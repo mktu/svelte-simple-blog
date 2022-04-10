@@ -2,6 +2,7 @@
 	import QiitaIcon from '$lib/icons/qiitaIcon.svelte';
 	import ZennIcon from '$lib/icons/ZennIcon.svelte';
 	import GithunIcon from '$lib/icons/GithubIcon.svelte';
+	import { base } from '$app/paths';
 	import type { Auther } from '$lib/types';
 	export let auther: Auther = null;
 </script>
@@ -35,7 +36,7 @@
 		</ul>
 	</div>
 	<div class="rabit-image">
-		<img src="rabit_image_top.svg" width="128" alt="rabit" />
+		<img src={`${base}/rabit_image_top.svg`} width="128" alt="rabit" />
 	</div>
 </div>
 

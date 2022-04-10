@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 </script>
 
 <header>
 	<ul>
-		<li class:active={$page.url.pathname === '/pages'}>
-			<a sveltekit:prefetch href="/pages">Articles</a>
+		<li class:active={$page.url.pathname === `${base}/pages/0`}>
+			<a sveltekit:prefetch href={`${base}/pages/0`}>Articles</a>
 		</li>
 		<li>|</li>
-		<li class:active={$page.url.pathname === '/'}>
-			<a sveltekit:prefetch href="/">About Me</a>
+		<li class:active={$page.url.pathname === base}>
+			<a sveltekit:prefetch href={base}>About Me</a>
 		</li>
 	</ul>
 </header>

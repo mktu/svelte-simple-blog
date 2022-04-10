@@ -45,8 +45,8 @@
 		{/each}
 	</section>
 	<nav>
-		<a class={page > 0 ? 'nav-link' : 'nav-link-disabled'} href={`/pages/${page-1}`} >前へ</a>
-		<a class={hasMore ? 'nav-link' : 'nav-link-disabled'} href={`/pages/${page+1}`} >次へ</a>
+		<a class={page > 0 ? 'nav-link' : 'nav-link-disabled'} href={page > 0 ? `${base}/pages/${page-1}` : undefined} tabindex={page > 0 ? 0 : -1}>前へ</a>
+		<a class={hasMore ? 'nav-link' : 'nav-link-disabled'} href={hasMore ? `${base}/pages/${page+1}` : undefined} tabindex={hasMore ? 0 : -1}>次へ</a>
 	</nav>
 </div>
 

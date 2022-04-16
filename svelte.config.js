@@ -1,7 +1,7 @@
 import preprocess from 'svelte-preprocess';
 import static_adapter from '@sveltejs/adapter-static';
 
-const dev = process.env.NODE_ENV === 'development';
+const production = process.env.MODE !=='test' && process.env.NODE_ENV === 'production';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +16,7 @@ const config = {
 	kit: {
 		adapter: static_adapter(),
 		paths: {
-			base: dev ? '' : '/svelte-simple-blog',
+			base: production ? '/svelte-simple-blog' : '',
 		},
 		trailingSlash : 'never',
 		prerender : {

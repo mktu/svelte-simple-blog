@@ -1,6 +1,3 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
 name: Svelte blog CI
 
 on:
@@ -34,9 +31,16 @@ jobs:
         cache: 'npm'
         
     - run: npm install
+
+    - name: install playwright
+      run: npx playwright install
+      if: github.event_name != 'repository_dispatch'
+    - name: run test
+      run: npm test
+      if: github.event_name != 'repository_dispatch'
+
     - run: npm run build
-    - run: npx playwright install
-    - run: npm test
+
     - name: Deploy website
       uses: peaceiris/actions-gh-pages@v3
       with:

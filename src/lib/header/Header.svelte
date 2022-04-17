@@ -10,7 +10,7 @@
 		</li>
 		<li>|</li>
 		<li class:active={$page.url.pathname === base}>
-			<a sveltekit:prefetch href={base}>About Me</a>
+			<a sveltekit:prefetch href={`${base}/`}>About Me</a>
 		</li>
 	</ul>
 </header>

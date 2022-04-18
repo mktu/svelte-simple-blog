@@ -1,11 +1,12 @@
 <script lang="ts">
 	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
+	import { MetaTags } from 'svelte-meta-tags';
 	import IconButton from '$lib/buttons/IconButton.svelte';
 	import ChevronDoubleUp from '$lib/icons/ChevronDoubleUp.svelte';
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import { fly } from 'svelte/transition';
-	let element : HTMLElement;
+	let element: HTMLElement;
 	let intersecting: boolean;
 	export let article: Article;
 	const handleScroleTop = () => {
@@ -15,8 +16,28 @@
 	};
 </script>
 
+<MetaTags
+	openGraph={article
+		? {
+				title: article?.title,
+				description: article.meta?.description,
+				type: 'article',
+				article: {
+					publishedTime: article._sys.createdAt,
+					modifiedTime: article._sys.updatedAt,
+					authors: [article._sys.owner],
+				},
+				images: [
+					{
+						url: article.meta?.ogImage?.src,
+						alt: article.meta?.title
+					}
+				]
+		  }
+		: { title: '記事が存在しません' }}
+/>
+
 <svelte:head>
-	<title>{article ? article.title : '記事が存在しません'}</title>
 	<script
 		type="text/javascript"
 		src="https://b.st-hatena.com/js/bookmark_button.js"
@@ -62,7 +83,7 @@
 				</div>
 			</header>
 			<div class="content">
-                {@html article.body}
+				{@html article.body}
 				{#if !intersecting}
 					<span transition:fly={{ y: 200 }} class="scroll-top-button">
 						<IconButton onClick={handleScroleTop}>

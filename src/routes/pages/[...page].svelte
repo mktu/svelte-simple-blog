@@ -64,6 +64,9 @@
 	}
 	h1 {
 		margin-bottom: 0.25rem;
+		a {
+			color : $text-color;
+		}
 	}
 	nav {
 		display: flex;

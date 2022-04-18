@@ -25,7 +25,10 @@ export type Article = {
     slug : string,
     meta ?: MetaArticle,
     body ?: string,
-    coverImage ?: string,
+    coverImage ?: {
+        id : string,
+        src : string,
+    }
     author : string,
     categories : string,
     _sys : MetaArticleSys

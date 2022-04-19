@@ -16,7 +16,7 @@ const config = {
 	kit: {
 		adapter: static_adapter(),
 		paths: {
-			base: production ? '/svelte-simple-blog' : '',
+			base: production ? '/svelte-simple-blog' : '/',
 		},
 		trailingSlash : 'never',
 		prerender : {

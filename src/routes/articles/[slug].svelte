@@ -17,6 +17,8 @@
 </script>
 
 <MetaTags
+	title={article?.title}
+	description={article?.meta?.description}
 	openGraph={article
 		? {
 				title: article?.title,
@@ -25,7 +27,7 @@
 				article: {
 					publishedTime: article._sys.createdAt,
 					modifiedTime: article._sys.updatedAt,
-					authors: [article._sys.owner],
+					authors: [article._sys.owner]
 				},
 				images: [
 					{
@@ -36,7 +38,6 @@
 		  }
 		: { title: '記事が存在しません' }}
 />
-
 <svelte:head>
 	<script
 		type="text/javascript"

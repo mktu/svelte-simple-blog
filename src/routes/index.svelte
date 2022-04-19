@@ -35,11 +35,8 @@
 			</li>
 		</ul>
 	</div>
-	<div class="rabit-image">
-		<img src={`${base}/rabit_image_top.svg`} width="128" alt="rabit" />
-	</div>
+	
 </div>
-
 <style lang="scss">
 	.container {
 		display: flex;
@@ -69,13 +66,6 @@
 			text-decoration: underline;
 		}
 	}
-	.rabit-image {
-		position: absolute;
-		bottom: 25px;
-		right: 100px;
-		z-index: 0;
-	}
-
 	@media screen and (min-width: 800px) {
 		.paper {
 			border: 3px solid black;

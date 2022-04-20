@@ -17,7 +17,7 @@
 		description:'記事一覧',
 		images: [
 			{
-				url: 'https://github.com/mktu/svelte-simple-blog/blob/main/static/ogp-img.png',
+				url: 'https://raw.githubusercontent.com/mktu/svelte-simple-blog/main/static/ogp-img.png',
 				alt: 'mktu blog page'
 			}
 		]

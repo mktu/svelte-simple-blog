@@ -1,7 +1,8 @@
 export type Auther = {
     fullName : string,
     profileImage ?: string,
-    biography ?: string
+    biography ?: string,
+    description ?: string
 }
 
 export type MetaArticle = {

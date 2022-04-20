@@ -6,7 +6,6 @@
 	export let articles: Article[] = [];
     export let hasMore = false;
     export let page = 0
-	console.log(import.meta.url)
 </script>
 
 <MetaTags
@@ -16,12 +15,15 @@
 		type: 'website',
 		title:'Articles',
 		description:'記事一覧',
-		
+		images: [
+			{
+				url: 'https://github.com/mktu/svelte-simple-blog/blob/main/static/ogp-img.png',
+				alt: 'mktu blog page'
+			}
+		]
   }}
 />
-
 <div class="articles">
-	
 	<section>
 		{#each articles as article (article.slug)}
 			<article>

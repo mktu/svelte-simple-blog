@@ -2,14 +2,26 @@
 	import QiitaIcon from '$lib/icons/QiitaLogoIcon.svelte';
 	import ZennIcon from '$lib/icons/ZennIcon.svelte';
 	import GithunIcon from '$lib/icons/GithubIcon.svelte';
-	import { base } from '$app/paths';
+	import { MetaTags } from 'svelte-meta-tags';
 	import type { Auther } from '$lib/types';
 	export let auther: Auther = null;
 </script>
 
-<svelte:head>
-	<title>About Me</title>
-</svelte:head>
+<MetaTags
+	title='mktu blog page'
+	description='記事一覧'
+	openGraph={{
+		type: 'website',
+		title:'mktu blog page',
+		description: auther?.description,
+		images: [
+			{
+				url: 'https://github.com/mktu/svelte-simple-blog/blob/main/static/ogp-img.png',
+				alt: 'mktu blog page'
+			}
+		]
+  }}
+/>
 
 <div class="container">
 	<div class="paper">

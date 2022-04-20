@@ -1,15 +1,25 @@
 <script lang="ts">
 	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
+	import { MetaTags } from 'svelte-meta-tags';
 	import { base } from '$app/paths';
 	export let articles: Article[] = [];
     export let hasMore = false;
     export let page = 0
+	console.log(import.meta.url)
 </script>
 
-<svelte:head>
-	<title>Articles</title>
-</svelte:head>
+<MetaTags
+	title='Articles'
+	description='記事一覧'
+	openGraph={{
+		type: 'website',
+		title:'Articles',
+		description:'記事一覧',
+		
+  }}
+/>
+
 <div class="articles">
 	
 	<section>

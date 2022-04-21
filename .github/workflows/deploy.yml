@@ -2,9 +2,9 @@ name: Svelte blog CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   repository_dispatch:
     types:
       - webhook
@@ -23,26 +23,26 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        
-    - run: npm install
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
-    - name: install playwright
-      run: npx playwright install
-      if: github.event_name != 'repository_dispatch'
-    - name: run test
-      run: npm test
-      if: github.event_name != 'repository_dispatch'
+      - run: npm install
 
-    - run: npm run build
+      - name: install playwright
+        run: npx playwright install
+        if: github.event_name != 'repository_dispatch'
+      - name: run test
+        run: npm test
+        if: github.event_name != 'repository_dispatch'
 
-    - name: Deploy website
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: build
+      - run: npm run build
+
+      - name: Deploy website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build

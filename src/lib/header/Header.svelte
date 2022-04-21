@@ -14,6 +14,7 @@
 		</li>
 	</ul>
 </header>
+
 <style lang="scss">
 	header {
 		position: sticky;
@@ -24,7 +25,7 @@
 		justify-content: center;
 		width: 100vw;
 		box-shadow: 0 0.1px 5px rgba(0, 0, 0, 0.1);
-		border-bottom: 1px solid rgba(0,0,0,0.3);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 		background: rgba(255, 255, 255, 0.7);
 		ul {
 			display: flex;
@@ -32,7 +33,7 @@
 			align-items: center;
 			list-style: none;
 			text-decoration: none;
-			padding : 0;
+			padding: 0;
 			li {
 				margin: 0 0.5rem;
 				a {

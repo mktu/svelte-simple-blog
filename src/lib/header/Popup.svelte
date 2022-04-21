@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-    export let onClose : ()=>void = ()=>{};
+	export let onClose: () => void = () => {};
 </script>
 
 <div class="container">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import "@fontsource/m-plus-1"
+	import '@fontsource/m-plus-1';
 	import Header from '$lib/header/Header.svelte';
 	import Footer from '$lib/footer/Footer.svelte';
 	import '../app.scss';
@@ -14,7 +14,7 @@
 <Footer />
 
 <style lang="scss">
-    main {
+	main {
 		flex: 1;
 		width: 100%;
 		height: 100%;

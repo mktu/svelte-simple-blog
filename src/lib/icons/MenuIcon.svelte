@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let width : number = 0;
-    export let height : number = 0;
+	export let width: number = 0;
+	export let height: number = 0;
 </script>
 
 <svg
@@ -9,8 +9,8 @@
 	viewBox="0 0 24 24"
 	stroke="black"
 	stroke-width="1.5"
-    width={width}
-    height={height}
+	{width}
+	{height}
 >
 	<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 </svg>

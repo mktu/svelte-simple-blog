@@ -8,11 +8,11 @@
 </script>
 
 <MetaTags
-	title='mktu blog page'
-	description='記事一覧'
+	title="mktu blog page"
+	description="記事一覧"
 	openGraph={{
 		type: 'website',
-		title:'mktu blog page',
+		title: 'mktu blog page',
 		description: auther?.description,
 		images: [
 			{
@@ -20,7 +20,7 @@
 				alt: 'mktu blog page'
 			}
 		]
-  }}
+	}}
 />
 
 <div class="container">
@@ -47,8 +47,8 @@
 			</li>
 		</ul>
 	</div>
-	
 </div>
+
 <style lang="scss">
 	.container {
 		display: flex;

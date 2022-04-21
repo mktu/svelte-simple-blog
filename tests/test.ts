@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const BASE_PATH = '/svelte-simple-blog'
+const BASE_PATH = '/svelte-simple-blog';
 
 test('index page to article page transition', async ({ page }) => {
 	await page.goto(BASE_PATH);

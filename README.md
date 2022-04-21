@@ -2,13 +2,7 @@
 
 Svelte-Simple-Blog is a simple blog made with [SvelteKit](https://kit.svelte.dev/) and [Newt](https://www.newt.so/)
 
-## Visit
-
 👉 https://mktu.github.io/svelte-simple-blog
-
-- About technologies
-
-👉 [TBD]
 
 ## Developing
 
@@ -45,3 +39,7 @@ To deploy your app, run
 ```bash
 npm run deploy
 ```
+
+## Related articles
+
+👉 [SvelteKit + Newt + Github Pageでブログをデプロイするまで (Zenn)](https://zenn.dev/mktu/articles/29eab3ac780f13)

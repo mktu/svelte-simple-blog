@@ -3,7 +3,7 @@ import type { RequestHandler } from '@sveltejs/kit';
 
 const PAGE_LIMIT = 2;
 
-export const get: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	try {
 		const page = params['page'] ? Number(params['page']) : 0;
 		const articles = await getArticles({ limit: PAGE_LIMIT + 1, skip: page * PAGE_LIMIT });

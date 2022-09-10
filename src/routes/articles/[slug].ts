@@ -1,7 +1,7 @@
 import { getArticle } from '$lib/newt/client';
 import type { RequestHandler } from '@sveltejs/kit';
 
-export const get: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	try {
 		const article = await getArticle(params.slug);
 		if (article.body) {

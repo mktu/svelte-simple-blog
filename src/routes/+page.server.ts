@@ -1,16 +1,14 @@
 import { getAuther } from '$lib/newt/client';
-import type { RequestHandler } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 
-export const GET: RequestHandler = async () => {
+export const load: PageServerLoad = async () => {
 	// locals.userid comes from src/hooks.js
 	try {
 		const auther = await getAuther();
 		return {
-			body: {
-				auther
-			}
+			auther
 		};
 	} catch (e) {
-		return {};
+		return;
 	}
 };

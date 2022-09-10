@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
 	import { MetaTags } from 'svelte-meta-tags';
 	import { base } from '$app/paths';
-	export let articles: Article[] = [];
-	export let hasMore = false;
-	export let page = 0;
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+	const { articles = [], hasMore = false, page = 0 } = data;
 </script>
 
 <MetaTags

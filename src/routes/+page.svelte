@@ -3,8 +3,10 @@
 	import ZennIcon from '$lib/icons/ZennIcon.svelte';
 	import GithunIcon from '$lib/icons/GithubIcon.svelte';
 	import { MetaTags } from 'svelte-meta-tags';
-	import type { Auther } from '$lib/types';
-	export let auther: Auther = null;
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+	const { auther = null } = data;
 </script>
 
 <MetaTags

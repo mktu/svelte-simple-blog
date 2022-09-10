@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "rm -rf build && vite build",
-		"build:test" : "rm -rf build && NODE_ENV=test vite build --mode test",
+		"build:test": "rm -rf build && NODE_ENV=test vite build --mode test",
 		"deploy": "rm -rf node_modules/.cache/gh-pages && npm run build && gh-pages -d build -t true",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
@@ -18,8 +18,8 @@
 	"devDependencies": {
 		"@playwright/test": "1.25.2",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-static": "1.0.0-next.39",
-		"@sveltejs/kit": "1.0.0-next.405",
+		"@sveltejs/adapter-static": "1.0.0-next.42",
+		"@sveltejs/kit": "1.0.0-next.480",
 		"@typescript-eslint/eslint-plugin": "5.36.2",
 		"@typescript-eslint/parser": "5.36.2",
 		"eslint": "8.22.0",

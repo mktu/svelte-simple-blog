@@ -1,14 +1,15 @@
 <script lang="ts">
-	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
 	import { MetaTags } from 'svelte-meta-tags';
 	import IconButton from '$lib/buttons/IconButton.svelte';
 	import ChevronDoubleUp from '$lib/icons/ChevronDoubleUp.svelte';
 	import IntersectionObserver from 'svelte-intersection-observer';
 	import { fly } from 'svelte/transition';
+	import type { PageData } from './$types';
+	export let data: PageData;
 	let element: HTMLElement;
 	let intersecting: boolean;
-	export let article: Article;
+	const { article } = data;
 	const handleScroleTop = () => {
 		if (typeof window !== undefined) {
 			window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -22,9 +22,6 @@ const config = {
 			base: production ? '/svelte-simple-blog' : ''
 		},
 		trailingSlash: 'never',
-		prerender: {
-			default: true
-		}
 	}
 };
 

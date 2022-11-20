@@ -19,9 +19,9 @@
 		"@playwright/test": "1.27.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-static": "1.0.0-next.48",
-		"@sveltejs/kit": "1.0.0-next.542",
-		"@typescript-eslint/eslint-plugin": "5.42.1",
-		"@typescript-eslint/parser": "5.42.1",
+		"@sveltejs/kit": "1.0.0-next.551",
+		"@typescript-eslint/eslint-plugin": "5.43.0",
+		"@typescript-eslint/parser": "5.43.0",
 		"eslint": "8.27.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-svelte3": "4.0.0",
@@ -33,8 +33,8 @@
 		"svelte-check": "2.9.2",
 		"svelte-preprocess": "4.10.7",
 		"tslib": "2.4.1",
-		"typescript": "4.8.4",
-		"vite": "3.2.3"
+		"typescript": "4.9.3",
+		"vite": "3.2.4"
 	},
 	"type": "module",
 	"dependencies": {
@@ -42,7 +42,7 @@
 		"newt-client-js": "3.2.2",
 		"svelte-intersection-observer": "0.10.0",
 		"svelte-markdown": "0.2.3",
-		"svelte-meta-tags": "2.6.3",
-		"svelte-simple-modal": "1.4.1"
+		"svelte-meta-tags": "2.6.4",
+		"svelte-simple-modal": "1.4.5"
 	}
 }

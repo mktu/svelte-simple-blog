@@ -7,7 +7,7 @@
 		"build:test": "rm -rf build && NODE_ENV=test vite build --mode test",
 		"deploy": "rm -rf node_modules/.cache/gh-pages && npm run build && gh-pages -d build -t true",
 		"package": "svelte-kit package",
-		"preview": "vite preview",
+		"preview": "NODE_ENV=test vite preview",
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",

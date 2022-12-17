@@ -5,6 +5,7 @@ import static_adapter from '@sveltejs/adapter-static';
 // and sveltekit.config cannnot recognize vite's environment variable 
 // -> https://stackoverflow.com/questions/72956324/how-can-i-use-vite-env-variables-in-svelte-config-js
 const production = process.env.NODE_ENV === 'production'
+console.log(production)
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

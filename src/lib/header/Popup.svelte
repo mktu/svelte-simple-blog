@@ -7,15 +7,15 @@
 	<ul>
 		<li class:active={$page.url.pathname === '/pages'}>
 			<span role="img" aria-label="article">🗒</span>
-			<a sveltekit:prefetch href="/pages" on:click={onClose}> Articles </a>
+			<a data-sveltekit-preload-data href="/pages" on:click={onClose}> Articles </a>
 		</li>
 		<li class:active={$page.url.pathname === '/portfolios'}>
 			<span role="img" aria-label="portfolio">📚</span>
-			<a sveltekit:prefetch href="/portfolios" on:click={onClose}> Portfolio </a>
+			<a data-sveltekit-preload-data href="/portfolios" on:click={onClose}> Portfolio </a>
 		</li>
 		<li class:active={$page.url.pathname === '/'}>
 			<span role="img" aria-label="about me">💁‍♂️</span>
-			<a sveltekit:prefetch href="/" on:click={onClose}> About Me </a>
+			<a data-sveltekit-preload-data href="/" on:click={onClose}> About Me </a>
 		</li>
 	</ul>
 </div>

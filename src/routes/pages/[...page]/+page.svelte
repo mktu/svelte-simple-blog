@@ -29,7 +29,7 @@
 			<article>
 				<header>
 					<h1>
-						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>
+						<a data-sveltekit-preload-data href={`${base}/articles/${article._id}`}>
 							{article.title}
 						</a>
 					</h1>
@@ -46,11 +46,13 @@
 				{#if article?.meta?.description}
 					<div class="description">
 						{article?.meta?.description || ''}
-						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>...続きを読む</a>
+						<a data-sveltekit-preload-data href={`${base}/articles/${article._id}`}>...続きを読む</a
+						>
 					</div>
 				{:else}
 					<div class="description">
-						<a sveltekit:prefetch href={`${base}/articles/${article._id}`}>...続きを読む</a>
+						<a data-sveltekit-preload-data href={`${base}/articles/${article._id}`}>...続きを読む</a
+						>
 					</div>
 				{/if}
 			</article>

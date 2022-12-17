@@ -21,7 +21,6 @@ const config = {
 		paths: {
 			base: production ? '/svelte-simple-blog' : ''
 		},
-		trailingSlash: 'never',
 	}
 };
 

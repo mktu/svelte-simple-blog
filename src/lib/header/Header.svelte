@@ -6,11 +6,11 @@
 <header>
 	<ul>
 		<li class:active={$page.url.pathname === `${base}/pages/0`}>
-			<a sveltekit:prefetch href={`${base}/pages/0`}>Articles</a>
+			<a data-sveltekit-preload-data href={`${base}/pages/0`}>Articles</a>
 		</li>
 		<li>|</li>
 		<li class:active={$page.url.pathname === base}>
-			<a sveltekit:prefetch href={`${base}/`}>About Me</a>
+			<a data-sveltekit-preload-data href={`${base}/`}>About Me</a>
 		</li>
 	</ul>
 </header>

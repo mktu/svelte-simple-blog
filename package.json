@@ -17,12 +17,12 @@
 	"devDependencies": {
 		"@playwright/test": "1.29.1",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-static": "1.0.0",
-		"@sveltejs/kit": "1.0.1",
-		"@typescript-eslint/eslint-plugin": "5.47.1",
-		"@typescript-eslint/parser": "5.47.1",
-		"eslint": "8.30.0",
-		"eslint-config-prettier": "8.5.0",
+		"@sveltejs/adapter-static": "1.0.1",
+		"@sveltejs/kit": "1.0.5",
+		"@typescript-eslint/eslint-plugin": "5.48.1",
+		"@typescript-eslint/parser": "5.48.1",
+		"eslint": "8.31.0",
+		"eslint-config-prettier": "8.6.0",
 		"eslint-plugin-svelte3": "4.0.0",
 		"gh-pages": "4.0.0",
 		"prettier": "2.8.1",
@@ -33,7 +33,7 @@
 		"svelte-preprocess": "5.0.0",
 		"tslib": "2.4.1",
 		"typescript": "4.9.4",
-		"vite": "4.0.3"
+		"vite": "4.0.4"
 	},
 	"type": "module",
 	"dependencies": {
@@ -42,6 +42,6 @@
 		"svelte-intersection-observer": "0.10.0",
 		"svelte-markdown": "0.2.3",
 		"svelte-meta-tags": "2.6.4",
-		"svelte-simple-modal": "1.4.5"
+		"svelte-simple-modal": "1.4.6"
 	}
 }

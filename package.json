@@ -40,7 +40,7 @@
 		"newt-client-js": "3.2.4",
 		"svelte-intersection-observer": "0.10.0",
 		"svelte-markdown": "0.2.3",
-		"svelte-meta-tags": "2.7.2",
+		"svelte-meta-tags": "2.8.0",
 		"svelte-simple-modal": "1.5.2"
 	}
 }

@@ -87,7 +87,7 @@
 			<div class="content">
 				{@html article.body}
 				{#if !intersecting}
-					<span transition:fly={{ y: 200 }} class="scroll-top-button">
+					<span transition:fly|global={{ y: 200 }} class="scroll-top-button">
 						<IconButton onClick={handleScroleTop}>
 							<ChevronDoubleUp width={48} height={48} />
 						</IconButton>

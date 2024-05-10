@@ -37,7 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"date-fns": "2.30.0",
-		"newt-client-js": "3.2.6",
+		"newt-client-js": "3.2.8",
 		"svelte-intersection-observer": "0.10.1",
 		"svelte-markdown": "0.4.0",
 		"svelte-meta-tags": "2.8.0",

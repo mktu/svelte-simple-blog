@@ -41,6 +41,6 @@
 		"svelte-intersection-observer": "0.10.2",
 		"svelte-markdown": "0.4.1",
 		"svelte-meta-tags": "2.8.0",
-		"svelte-simple-modal": "1.6.1"
+		"svelte-simple-modal": "1.6.2"
 	}
 }

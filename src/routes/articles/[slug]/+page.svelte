@@ -36,7 +36,7 @@
 						alt: article.meta?.title
 					}
 				]
-		  }
+			}
 		: { title: '記事が存在しません' }}
 />
 <svelte:head>
@@ -44,7 +44,8 @@
 		type="text/javascript"
 		src="https://b.st-hatena.com/js/bookmark_button.js"
 		charset="utf-8"
-		async></script>
+		async
+	></script>
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
 

@@ -10,8 +10,7 @@ export const load: PageServerLoad = async ({ params }) => {
 		return {
 			article
 		};
-	} catch (e) {
-		//console.error(e)
+	} catch {
 		return;
 	}
 };

@@ -30,6 +30,8 @@
 		<h1>My Profile</h1>
 		<article>
 			{#if auther}
+				<!-- auther.biography is trusted HTML authored in the Newt CMS, not user input -->
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html auther.biography}
 			{/if}
 		</article>

@@ -11,7 +11,7 @@
 	let intersecting: boolean;
 	const { article } = data;
 	const handleScroleTop = () => {
-		if (typeof window !== undefined) {
+		if (typeof window !== 'undefined') {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 		}
 	};
@@ -86,6 +86,8 @@
 				</div>
 			</header>
 			<div class="content">
+				<!-- article.body is trusted HTML authored in the Newt CMS, not user input -->
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html article.body}
 				{#if !intersecting}
 					<span transition:fly|global={{ y: 200 }} class="scroll-top-button">

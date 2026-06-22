@@ -10,7 +10,7 @@ export const load: PageServerLoad = async () => {
 		return {
 			auther
 		};
-	} catch (e) {
+	} catch {
 		return;
 	}
 };

@@ -11,7 +11,7 @@
 	let intersecting: boolean;
 	const { article } = data;
 	const handleScroleTop = () => {
-		if (typeof window !== undefined) {
+		if (typeof window !== 'undefined') {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 		}
 	};
@@ -36,7 +36,7 @@
 						alt: article.meta?.title
 					}
 				]
-		  }
+			}
 		: { title: '記事が存在しません' }}
 />
 <svelte:head>
@@ -44,7 +44,8 @@
 		type="text/javascript"
 		src="https://b.st-hatena.com/js/bookmark_button.js"
 		charset="utf-8"
-		async></script>
+		async
+	></script>
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
 
@@ -85,6 +86,8 @@
 				</div>
 			</header>
 			<div class="content">
+				<!-- article.body is trusted HTML authored in the Newt CMS, not user input -->
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html article.body}
 				{#if !intersecting}
 					<span transition:fly|global={{ y: 200 }} class="scroll-top-button">

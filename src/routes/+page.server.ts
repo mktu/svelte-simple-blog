@@ -1,6 +1,6 @@
 // https://github.com/sveltejs/kit/issues/9404
 export const trailingSlash = 'always';
-import { getAuther } from '$lib/newt/client';
+import { getAuther } from '$lib/content/author';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {

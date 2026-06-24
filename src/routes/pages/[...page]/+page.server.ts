@@ -1,4 +1,4 @@
-import { getArticles } from '$lib/newt/client';
+import { getArticles } from '$lib/content/articles';
 import type { PageServerLoad } from './$types';
 
 const PAGE_LIMIT = 2;

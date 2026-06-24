@@ -40,7 +40,8 @@
 	"type": "module",
 	"dependencies": {
 		"date-fns": "2.30.0",
-		"newt-client-js": "3.2.8",
+		"gray-matter": "4.0.3",
+		"marked": "18.0.5",
 		"svelte-intersection-observer": "1.1.1",
 		"svelte-meta-tags": "5.0.0"
 	}

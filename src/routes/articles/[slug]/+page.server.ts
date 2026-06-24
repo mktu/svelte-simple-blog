@@ -1,4 +1,4 @@
-import { getArticle } from '$lib/newt/client';
+import { getArticle } from '$lib/content/articles';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {

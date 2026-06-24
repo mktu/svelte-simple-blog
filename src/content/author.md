@@ -1,8 +1,8 @@
 ---
-fullName: mktu
-description: web developer
+fullName: 'mktu'
+description: 'フロントエンド技術が好きで、こつこつ個人開発などやってます。Software Engineer. Love React.js'
 ---
 
-はじめまして、**mktu** です。Web 開発が好きです。
-
-このブログは [SvelteKit](https://kit.svelte.dev/) で作られた静的サイトで、記事はリポジトリ内の Markdown ファイルとして管理されています。
+フロントエンド技術が好きで、こつこつ個人開発などやってます  
+Software Engineer. Love React.js  
+👉 [今まで作ってきたものについて](https://mktu.github.io/svelte-simple-blog/articles/portfolios)

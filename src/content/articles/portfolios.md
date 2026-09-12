@@ -3,7 +3,7 @@ title: '今まで作ってきたものについて（ポートフォリオ）'
 slug: 'portfolios'
 description: '今まで作ってきたサービスを簡単に紹介したいと思います。'
 createdAt: '2022-04-17T14:04:54.266Z'
-updatedAt: '2022-04-19T01:07:40.489Z'
+updatedAt: '2026-08-30T00:00:00.000Z'
 author: 'mktu'
 categories: 'developers'
 ogImage: '/images/articles/portfolios/jess-bailey-q10VITrVYUM-unsplash.jpg'
@@ -13,6 +13,19 @@ coverImage: '/images/articles/portfolios/jess-bailey-q10VITrVYUM-unsplash.jpg'
 # 作ってきたサービス
 
 今まで作ってきたサービスを簡単に紹介したいと思います。
+
+## RecipeHub(2026/1〜)
+
+![](/images/articles/portfolios/RecipeHub.png)
+
+[RecipeHub](https://recipe-app-wine-three.vercel.app/lp)は、複数のレシピサイトに散らばったお気に入りレシピを LINE で集約・検索できるレシピ図鑑アプリです。レシピの URL を LINE に送るだけで料理名や材料が登録され、あとは「豚肉」のようななんとなく覚えているキーワードを送るだけで探し出せます。表記ゆれの多い食材名は辞書による名寄せとベクトル検索で吸収しており、「豚こま切れ肉」で登録したレシピも「豚肉」で拾えるようにしています。技術的には Next.js + Supabase + Gemini + LINE(LIFF) を使っており、設計から実装まで Claude Code によるフル AI コーディングで開発したのが今までとの大きな違いです。
+
+### 関連記事など
+
+このアプリを作る上で気をつけたことや関連技術をまとめています。
+
+- [LINEで使えるレシピのブックマークアプリを作ってみた（Zenn）](https://zenn.dev/mktu/articles/000e97357492c5)
+- [ソースコード（GitHub）](https://github.com/mktu/recipe-app)
 
 ## Bookmark Board(2021/4〜)
 

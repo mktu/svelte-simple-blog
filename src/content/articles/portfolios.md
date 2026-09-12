@@ -16,7 +16,7 @@ coverImage: '/images/articles/portfolios/jess-bailey-q10VITrVYUM-unsplash.jpg'
 
 ## RecipeHub(2026/1〜)
 
-![](/images/articles/portfolios/RecipeHub.png)
+<img src="/images/articles/portfolios/RecipeHub.png" alt="RecipeHub の画面" width="320" height="542" />
 
 [RecipeHub](https://recipe-app-wine-three.vercel.app/lp)は、複数のレシピサイトに散らばったお気に入りレシピを LINE で集約・検索できるレシピ図鑑アプリです。レシピの URL を LINE に送るだけで料理名や材料が登録され、あとは「豚肉」のようななんとなく覚えているキーワードを送るだけで探し出せます。表記ゆれの多い食材名は辞書による名寄せとベクトル検索で吸収しており、「豚こま切れ肉」で登録したレシピも「豚肉」で拾えるようにしています。技術的には Next.js + Supabase + Gemini + LINE(LIFF) を使っており、設計から実装まで Claude Code によるフル AI コーディングで開発したのが今までとの大きな違いです。
 
